@@ -20,9 +20,9 @@ MVVM – Clean architecture pattern <br>
 URLSession – For API calls <br>
 AsyncImage – Optimized image loading <br>
 
-## 📬 Contact
-👤 Harish Kshirsagar
-📧 harishkshirsagar1234@gmail.com
-🔗 https://github.com/harishkshirsagar1234
+## 📬 Contact <br>
+👤 Harish Kshirsagar <br>
+📧 harishkshirsagar1234@gmail.com <br>
+🔗 https://github.com/harishkshirsagar1234 <br>
 
 
