@@ -8,6 +8,7 @@ This is a SwiftUI app built with the Combine framework and MVVM architecture.
 
 ## ✨ Features <br>
 ✅ Built with SwiftUI & Combine <br>
+✅ Achieved SSL Pinning <br>
 ✅ Implements MVVM architecture <br>
 ✅ Fetches movie data from OMDb API <br>
 ✅ Uses AsyncImage for optimized image loading <br>
@@ -16,6 +17,7 @@ This is a SwiftUI app built with the Combine framework and MVVM architecture.
 ## ⚡️ Technologies Used
 SwiftUI – Declarative UI framework <br>
 Combine – For handling asynchronous data <br>
+SSL Pinning - To establish secure communication
 MVVM – Clean architecture pattern <br>
 URLSession – For API calls <br>
 AsyncImage – Optimized image loading <br>
