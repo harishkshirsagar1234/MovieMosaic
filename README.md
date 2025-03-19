@@ -17,7 +17,7 @@ This is a SwiftUI app built with the Combine framework and MVVM architecture.
 ## ⚡️ Technologies Used
 SwiftUI – Declarative UI framework <br>
 Combine – For handling asynchronous data <br>
-SSL Pinning - To establish secure communication
+SSL Pinning - To establish secure communication <br>
 MVVM – Clean architecture pattern <br>
 URLSession – For API calls <br>
 AsyncImage – Optimized image loading <br>
