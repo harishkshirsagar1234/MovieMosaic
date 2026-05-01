@@ -1,17 +1,33 @@
-name: CI Pipeline
+name: iOS CI - Unit Tests
 
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  build:
+  test:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout code
+      # 1. Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Run simple check
-        run: echo "CI is working correctly"
-        
+      # 2. Show Xcode version (debug step)
+      - name: Show Xcode Version
+        run: xcodebuild -version
+
+      # 3. List schemes (important for debugging)
+      - name: List Schemes
+        run: xcodebuild -list
+
+      # 4. Build + Run Unit Tests
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+          -scheme MovieMosaic \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=iPhone 15' \
+          -resultBundlePath TestResults.xcresult
