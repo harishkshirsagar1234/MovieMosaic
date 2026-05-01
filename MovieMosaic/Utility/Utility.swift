@@ -6,7 +6,7 @@
 //
 
 struct Endpoints {
-    static let apiKey = "5c248545"
+    static let apiKey = "d750f45f"
 
     static func searchText(_ text : String) -> String {
         "https://www.omdbapi.com/?s=\(text)&page=1&apikey=\(apiKey)"
@@ -17,3 +17,5 @@ struct Endpoints {
         return "https://www.omdbapi.com/?i=\(imdbID)&apikey=\(apiKey)"
     }
 }
+
+

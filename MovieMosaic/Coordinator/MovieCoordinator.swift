@@ -13,18 +13,18 @@ protocol MovieCoordinatorProving {
     func fetchMovieDetails(endpoint: String) -> AnyPublisher<MovieDetailResponse, Error>
 }
 
-class MovieCoordinator: MovieCoordinatorProving {
+public class MovieCoordinator: MovieCoordinatorProving {
     
-    var service: Service
+    var service: ServiceProvider
     
-    init(service: Service) {
+    init(service: ServiceProvider) {
         self.service = service
     }
     
     func fetchMovies(endpoint: String) -> AnyPublisher<MovieResponse, Error> {
         return self.service.perform(from: endpoint)
     }
-    
+     
     func fetchMovieDetails(endpoint: String) -> AnyPublisher<MovieDetailResponse, Error> {
         return self.service.perform(from: endpoint)
     }

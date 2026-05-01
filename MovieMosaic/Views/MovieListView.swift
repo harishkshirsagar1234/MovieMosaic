@@ -16,7 +16,8 @@ struct MovieListView: View {
         NavigationView {
             VStack {
                 TextField("Enter Movie Name", text: $searchText)
-                    .frame(width: .infinity, height: 40)
+                    .accessibilityIdentifier("SearchUsersField")
+                    .frame(height: 40)
                     .textFieldStyle(.plain)
                     .background(.gray.opacity(0.5))
                     .cornerRadius(20)
@@ -67,6 +68,7 @@ struct MovieListView: View {
                           
                         }
                     }
+                    .accessibilityIdentifier(movie.title)
                 }
                 .listStyle(.plain)
                 Spacer()

@@ -59,6 +59,12 @@ struct MovieDetailView: View {
             viewModel.fetchMovieDetails(imdbID: self.imdbID)
         }
     }
+    
+    @ViewBuilder
+    func views() -> some View {
+            Text("")
+            Text("")
+    }
 }
 
 #Preview {
