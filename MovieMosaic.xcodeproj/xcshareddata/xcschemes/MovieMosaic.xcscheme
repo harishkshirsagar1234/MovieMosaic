@@ -63,6 +63,17 @@
                ReferencedContainer = "container:MovieMosaic.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B5E6B7342FA4C57D00E117EB"
+               BuildableName = "SearchFlowUITests.xctest"
+               BlueprintName = "SearchFlowUITests"
+               ReferencedContainer = "container:MovieMosaic.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

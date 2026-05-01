@@ -28,6 +28,13 @@
 			remoteGlobalIDString = B57D02A72D6DF44300E69A28;
 			remoteInfo = MovieMosaic;
 		};
+		B5E6B73B2FA4C57D00E117EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B57D02A02D6DF44300E69A28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B57D02A72D6DF44300E69A28;
+			remoteInfo = MovieMosaic;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +42,7 @@
 		B57D02B82D6DF44500E69A28 /* MovieMosaicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieMosaicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57D02C22D6DF44500E69A28 /* MovieMosaicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieMosaicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E6B7252FA4C3DE00E117EB /* MovieListViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieListViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E6B7352FA4C57D00E117EB /* SearchFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -59,6 +67,20 @@
 			);
 			target = B5E6B7242FA4C3DE00E117EB /* MovieListViewModelTests */;
 		};
+		B5E6B7402FA4C59400E117EB /* Exceptions for "MovieMosaicUITests" folder in "MovieMosaicUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SearchFlowUITests.swift,
+			);
+			target = B57D02C12D6DF44500E69A28 /* MovieMosaicUITests */;
+		};
+		B5E6B7422FA4C59B00E117EB /* Exceptions for "MovieMosaicUITests" folder in "SearchFlowUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SearchFlowUITests.swift,
+			);
+			target = B5E6B7342FA4C57D00E117EB /* SearchFlowUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -81,12 +103,21 @@
 		};
 		B57D02C52D6DF44500E69A28 /* MovieMosaicUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B5E6B7402FA4C59400E117EB /* Exceptions for "MovieMosaicUITests" folder in "MovieMosaicUITests" target */,
+				B5E6B7422FA4C59B00E117EB /* Exceptions for "MovieMosaicUITests" folder in "SearchFlowUITests" target */,
+			);
 			path = MovieMosaicUITests;
 			sourceTree = "<group>";
 		};
 		B5E6B7262FA4C3DE00E117EB /* MovieListViewModelTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MovieListViewModelTests;
+			sourceTree = "<group>";
+		};
+		B5E6B7362FA4C57D00E117EB /* SearchFlowUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SearchFlowUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -120,6 +151,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5E6B7322FA4C57D00E117EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,6 +168,7 @@
 				B57D02BB2D6DF44500E69A28 /* MovieMosaicTests */,
 				B57D02C52D6DF44500E69A28 /* MovieMosaicUITests */,
 				B5E6B7262FA4C3DE00E117EB /* MovieListViewModelTests */,
+				B5E6B7362FA4C57D00E117EB /* SearchFlowUITests */,
 				B57D02A92D6DF44300E69A28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +180,7 @@
 				B57D02B82D6DF44500E69A28 /* MovieMosaicTests.xctest */,
 				B57D02C22D6DF44500E69A28 /* MovieMosaicUITests.xctest */,
 				B5E6B7252FA4C3DE00E117EB /* MovieListViewModelTests.xctest */,
+				B5E6B7352FA4C57D00E117EB /* SearchFlowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +279,29 @@
 			productReference = B5E6B7252FA4C3DE00E117EB /* MovieListViewModelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B5E6B7342FA4C57D00E117EB /* SearchFlowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5E6B73D2FA4C57D00E117EB /* Build configuration list for PBXNativeTarget "SearchFlowUITests" */;
+			buildPhases = (
+				B5E6B7312FA4C57D00E117EB /* Sources */,
+				B5E6B7322FA4C57D00E117EB /* Frameworks */,
+				B5E6B7332FA4C57D00E117EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5E6B73C2FA4C57D00E117EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B5E6B7362FA4C57D00E117EB /* SearchFlowUITests */,
+			);
+			name = SearchFlowUITests;
+			packageProductDependencies = (
+			);
+			productName = SearchFlowUITests;
+			productReference = B5E6B7352FA4C57D00E117EB /* SearchFlowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,6 +327,10 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = B57D02A72D6DF44300E69A28;
 					};
+					B5E6B7342FA4C57D00E117EB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = B57D02A72D6DF44300E69A28;
+					};
 				};
 			};
 			buildConfigurationList = B57D02A32D6DF44300E69A28 /* Build configuration list for PBXProject "MovieMosaic" */;
@@ -284,6 +351,7 @@
 				B57D02B72D6DF44500E69A28 /* MovieMosaicTests */,
 				B57D02C12D6DF44500E69A28 /* MovieMosaicUITests */,
 				B5E6B7242FA4C3DE00E117EB /* MovieListViewModelTests */,
+				B5E6B7342FA4C57D00E117EB /* SearchFlowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,6 +379,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B5E6B7232FA4C3DE00E117EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5E6B7332FA4C57D00E117EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,6 +423,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5E6B7312FA4C57D00E117EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -365,6 +447,11 @@
 			isa = PBXTargetDependency;
 			target = B57D02A72D6DF44300E69A28 /* MovieMosaic */;
 			targetProxy = B5E6B7292FA4C3DE00E117EB /* PBXContainerItemProxy */;
+		};
+		B5E6B73C2FA4C57D00E117EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B57D02A72D6DF44300E69A28 /* MovieMosaic */;
+			targetProxy = B5E6B73B2FA4C57D00E117EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -648,6 +735,38 @@
 			};
 			name = Release;
 		};
+		B5E6B73E2FA4C57D00E117EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harish.SearchFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieMosaic;
+			};
+			name = Debug;
+		};
+		B5E6B73F2FA4C57D00E117EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harish.SearchFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieMosaic;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -692,6 +811,15 @@
 			buildConfigurations = (
 				B5E6B72B2FA4C3DE00E117EB /* Debug */,
 				B5E6B72C2FA4C3DE00E117EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5E6B73D2FA4C57D00E117EB /* Build configuration list for PBXNativeTarget "SearchFlowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E6B73E2FA4C57D00E117EB /* Debug */,
+				B5E6B73F2FA4C57D00E117EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
