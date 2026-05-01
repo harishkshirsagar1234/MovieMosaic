@@ -1,4 +1,4 @@
-name: iOS CI - Unit Tests
+name: iOS CI
 
 on:
   push:
@@ -7,28 +7,49 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test:
+
+  unit-tests:
+    name: 🧪 Unit Tests
     runs-on: self-hosted
 
     steps:
-      # 1. Checkout code
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 2. Show Xcode version (debug step)
       - name: Show Xcode Version
         run: xcodebuild -version
 
-      # 3. List schemes (important for debugging)
       - name: List Schemes
         run: xcodebuild -list
 
-      # 4. Build + Run Unit Tests
       - name: Run Unit Tests
         run: |
           xcodebuild test \
           -scheme MovieMosaic \
           -sdk iphonesimulator \
           -destination 'platform=iOS Simulator,name=iPhone 16' \
+          -only-testing:MovieMosaicTests \
+          -only-testing:MovieListViewModelTests \
           -parallel-testing-enabled NO \
-          -resultBundlePath TestResults.xcresult
+          -resultBundlePath UnitTestResults.xcresult
+
+
+  ui-tests:
+    name: 📱 UI Tests
+    runs-on: self-hosted
+    needs: unit-tests
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run UI Tests
+        run: |
+          xcodebuild test \
+          -scheme MovieMosaic \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=iPhone 16' \
+          -only-testing:MovieMosaicUITests \
+          -only-testing:SearchFlowUITests \
+          -parallel-testing-enabled NO \
+          -resultBundlePath UITestResults.xcresult
