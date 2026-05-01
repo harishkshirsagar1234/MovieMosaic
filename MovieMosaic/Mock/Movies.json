@@ -1,0 +1,76 @@
+{
+  "Search": [
+    {
+      "Title": "Captain America: The Winter Soldier",
+      "Year": "2014",
+      "imdbID": "tt1843866",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNWY1NjFmNDItZDhmOC00NjI1LWE0ZDItMTM0MjBjZThiOTQ2XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain America: The First Avenger",
+      "Year": "2011",
+      "imdbID": "tt0458339",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzUyM2YyY2MtNzNlMS00MWU5LTgxNjAtNzZlNmI2NjU2NDZlXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain America: Civil War",
+      "Year": "2016",
+      "imdbID": "tt3498820",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain Marvel",
+      "Year": "2019",
+      "imdbID": "tt4154664",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZDI1NGU2ODAtNzBiNy00MWY5LWIyMGEtZjUxZjUwZmZiNjBlXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain Phillips",
+      "Year": "2013",
+      "imdbID": "tt1535109",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMWYyNjI3ZjEtNGE5ZS00MDgxLWIzNGEtZTgzNDVlZjZjYWU5XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain Fantastic",
+      "Year": "2016",
+      "imdbID": "tt3553976",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjE5OTM0OTY5NF5BMl5BanBnXkFtZTgwMDcxOTQ3ODE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain America: Brave New World",
+      "Year": "2025",
+      "imdbID": "tt14513804",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDRjY2E0ZmEtN2QwNi00NTEwLWI3MWItODNkMGYwYWFjNGE0XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain America: Brave New World",
+      "Year": "2025",
+      "imdbID": "tt14513804",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDRjY2E0ZmEtN2QwNi00NTEwLWI3MWItODNkMGYwYWFjNGE0XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Sky Captain and the World of Tomorrow",
+      "Year": "2004",
+      "imdbID": "tt0346156",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTM0NDQzMDA1NF5BMl5BanBnXkFtZTcwNTU3ODAzMw@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Captain Corelli's Mandolin",
+      "Year": "2001",
+      "imdbID": "tt0238112",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTA3Nzg5YzYtMDIzNy00ZmNlLWIxN2UtNTFhM2M5MmMyYmJkXkEyXkFqcGc@._V1_SX300.jpg"
+    }
+  ],
+  "totalResults": "1051",
+  "Response": "True"
+}
