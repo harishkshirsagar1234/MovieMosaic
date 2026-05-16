@@ -26,7 +26,7 @@ class MovieListViewModelTests: XCTestCase {
             }
             .store(in: &cancellable)
 
-        unitUnderTest.fetchMovies(searchText: "test")
+        unitUnderTest.fetchMovies(searchText: "")
         
         wait(for: [expectation], timeout: 3)
 
