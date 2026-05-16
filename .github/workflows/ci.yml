@@ -22,12 +22,18 @@ jobs:
       - name: List Schemes
         run: xcodebuild -list
 
+      - name: Boot Simulator
+        run: |
+          xcrun simctl boot "iPhone 15" || true
+          open -a Simulator
+
       - name: Run Unit Tests
         run: |
           xcodebuild test \
+          -project MovieMosaic.xcodeproj \
           -scheme MovieMosaic \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 16' \
+          -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
           -only-testing:MovieMosaicTests \
           -only-testing:MovieListViewModelTests \
           -parallel-testing-enabled NO \
@@ -43,12 +49,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Boot Simulator
+        run: |
+          xcrun simctl boot "iPhone 15" || true
+          open -a Simulator
+
       - name: Run UI Tests
         run: |
           xcodebuild test \
+          -project MovieMosaic.xcodeproj \
           -scheme MovieMosaic \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 16' \
+          -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
           -only-testing:MovieMosaicUITests \
           -only-testing:SearchFlowUITests \
           -parallel-testing-enabled NO \
