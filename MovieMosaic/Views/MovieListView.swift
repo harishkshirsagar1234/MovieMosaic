@@ -27,7 +27,7 @@ struct MovieListView: View {
                     .padding(20)
                 
                 if viewModel.isLoading {
-                    ProgressView("Loading...")
+                    ProgressView("Loading..")
                 } else if let errorMessage = viewModel.errorMessage {
                     Text(errorMessage)
                         .foregroundColor(.red)
