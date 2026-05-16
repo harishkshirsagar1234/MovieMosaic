@@ -17,7 +17,7 @@ struct MovieListView: View {
             VStack {
                 TextField("Enter Movie Name", text: $searchText)
                     .accessibilityIdentifier("SearchUsersField")
-                    .frame(height: 30)
+                    .frame(height: 40)
                     .textFieldStyle(.plain)
                     .background(.gray.opacity(0.5))
                     .cornerRadius(20)
